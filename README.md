@@ -1,4 +1,3 @@
-# 3D Camera Depth Accuracy Evaluation
 Evaluation of 3D camera accuracy using RGB images and point-cloud data. The project performs ROI-based surface segmentation, SVD plane fitting, plane-to-plane distance measurement, and point-to-plane error analysis to evaluate depth accuracy and surface noise at different camera distances.
 
 ## Plane to Plane Distance
