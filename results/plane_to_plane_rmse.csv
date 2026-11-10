@@ -1,0 +1,12 @@
+run,distance_cm,reported_rmse_mm
+Run 1,33,0.1332
+Run 1,43,0.0315
+Run 1,53,0.0256
+Run 1,63,0.0404
+Run 1,73,0.1865
+Run 2 (focus_53),33,0.3177
+Run 2 (focus_53),43,0.1403
+Run 2 (focus_53),48,0.1434
+Run 2 (focus_53),53,0.0499
+Run 2 (focus_53),63,0.168
+Run 2 (focus_53),73,0.3406
