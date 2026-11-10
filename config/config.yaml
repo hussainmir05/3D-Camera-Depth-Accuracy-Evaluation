@@ -1,6 +1,6 @@
 dataset: stair_measurement
 
-camera: Zivid 2+
+camera: Structured light camera
 data_2_45cm:
   step_polygons:
     - [[0, 0], [1845, 0], [1836, 238], [0, 225]]
