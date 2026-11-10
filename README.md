@@ -1,6 +1,6 @@
 Evaluation of 3D camera accuracy using RGB images and point-cloud data. The project performs ROI-based surface segmentation, SVD plane fitting, plane-to-plane distance measurement, and point-to-plane error analysis to evaluate depth accuracy and surface noise at different camera distances.
 
-**Camera:** Zivid 2+ · **Target:** 5-step staircase with 1, 2, 4 and 8 mm step heights · **Distances:** 33–73 cm
+**Camera:** Structured light camera · **Target:** 5-step staircase with 1, 2, 4 and 8 mm step heights · **Distances:** 33–73 cm
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/step_height_rmse_dark.png">
@@ -23,7 +23,6 @@ Run 1 is the measurement series tabulated in this README. Run 2 is a second seri
 |---|---|
 | [camera_test.py](camera_test.py) | Main pipeline: polygon ROI masking → SVD plane fit → point-to-plane residuals → step heights |
 | [config/config.yaml](config/config.yaml) | Stair ROI polygons (RGB pixel coordinates) for each dataset |
-| [main.py](main.py) | PySide6 GUI prototype, "3D Camera Studio" (merged from the `app` branch) |
 | [plot_results.py](plot_results.py) | Regenerates every chart in `figures/` from the CSVs in `results/` |
 | [results/](results/) | All result tables as CSV: step heights, RMSE, MAE/STD and point counts per plane |
 | [figures/](figures/) | Generated charts, in light and dark variants |
@@ -50,13 +49,6 @@ python plot_results.py
 ```
 
 The script also checks that each reported RMSE matches the step heights it is based on, and prints a warning if it doesn't.
-
-**Launch the GUI prototype** (layout only; the controls are not yet connected to a camera):
-
-```bash
-pip install PySide6
-python main.py
-```
 
 ## Plane to Plane Distance
 Method 
